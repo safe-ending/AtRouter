@@ -1,0 +1,26 @@
+<resources>
+    <!--K线-->
+    <string name="app_name">K线</string>
+
+    <string name="loading">加载中...</string>
+    <string name="no_data">暂无数据</string>
+    <string name="vol_name">成交量</string>
+    <string name="billions_shou">亿手</string>
+    <string name="millions_shou">万手</string>
+    <string name="shou">手</string>
+    <string name="billions_gu">亿股</string>
+    <string name="millions_gu">万股</string>
+    <string name="gu">股</string>
+
+    <string name="title387">今日涨跌</string>
+    <string name="title388">24H最高</string>
+    <string name="title389">24H成交</string>
+    <string name="title390">24H最低</string>
+
+    <string name="kline_m5">5分</string>
+    <string name="kline_m30">30分</string>
+    <string name="kline_h1">1小时</string>
+    <string name="kline_d1">日线</string>
+    <string name="kline_w1">周线</string>
+    <string name="kline_all">全屏</string>
+</resources>

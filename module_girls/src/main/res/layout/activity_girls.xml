@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ActivityGirls">
+
+    <data>
+
+        <import type="android.view.View" />
+
+
+        <variable
+            name="girlsViewModel"
+            type="com.at.arouter.coremodel.viewmodel.girls.GirlsViewModel" />
+
+        <variable
+            name="recyclerAdapter"
+            type="android.support.v7.widget.RecyclerView.Adapter" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/girls_list_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/refreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/girls_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="girls list"
+                        app:adapter="@{recyclerAdapter}"
+                        app:layoutManager="LinearLayoutManager" />
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</layout>

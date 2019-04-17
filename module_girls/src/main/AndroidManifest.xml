@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.at.arouter.module_girls">
+
+    <application>
+
+        <activity android:name=".ActivityGirls"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ActivityDynamicGirls"
+            android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>

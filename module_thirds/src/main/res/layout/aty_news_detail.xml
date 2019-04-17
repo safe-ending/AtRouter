@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.at.arouter.third.ui.aty.news.NewsDetailActivity.ClickHandler" />
+
+        <variable
+            name="dataHandler"
+            type="com.at.arouter.third.ui.aty.news.NewsDetailActivity.DataHandler" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/srl_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_comment"
+                android:layout_alignParentTop="true">
+
+                <com.at.arouter.third.ui.view.GradationScrollView
+                    android:id="@+id/gsv_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <WebView
+                            android:id="@+id/web_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:visibility="gone"
+                            android:background="@color/color_ACB0C3" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_comment_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:visibility="gone"
+                            android:focusableInTouchMode="true">
+
+                            <View style="@style/LineStyle"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:text="评论"
+                                android:visibility="gone"
+                                android:textColor="#2A4159"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_comment_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="16dp"
+                                android:textColor="#2A4159"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_comment"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </com.at.arouter.third.ui.view.GradationScrollView>
+
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            <ImageView
+                android:id="@+id/iv_scroll_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_comment"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                android:layout_marginBottom="26dp"
+                android:layout_marginRight="32dp"
+                android:src="@mipmap/scroll_top" />
+
+            <LinearLayout
+                android:id="@+id/ll_comment"
+                style="@style/padding_left_right"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/frame_line_30dp"
+                    android:gravity="center|left"
+                    android:hint="@string/a742"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#2A4159"
+                    android:textColorHint="#C4CED3"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="30dp">
+
+                    <ImageView
+                        android:id="@+id/iv_comment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="13dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/new_comment" />
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/iv_share"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="13dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:src="@mipmap/new_share" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>
+

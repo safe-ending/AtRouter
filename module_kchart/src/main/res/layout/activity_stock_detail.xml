@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center|center_vertical"
+        app:navigationIcon="@mipmap/left"
+        app:titleTextColor="@color/color_000000">
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.at.arouter.common.widget.ScrollViewExtend
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/btn_buy_sale"
+        android:layout_below="@+id/toolbar"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/color_FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF1E2437"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_usdt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="--"
+                        android:textColor="#FF8A91AE"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cny"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_usdt"
+                        android:text="=￥43287.99"
+                        android:textColor="#FF8A91AE"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/r2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r1"
+                    android:layout_marginTop="4dp">
+
+                    <View
+                        android:id="@+id/view_1"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:id="@+id/tv_hint1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title387"
+                        android:textColor="#FF8A91AE"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_up_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_hint1"
+                        android:text="--"
+                        android:textColor="#FF8A91AE"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hint2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/view_1"
+                        android:text="@string/title388"
+                        android:textColor="#FF8A91AE"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_24max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_hint2"
+                        android:text="--"
+                        android:textColor="#FFDDE0EE"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r2"
+                    android:layout_marginTop="5dp">
+
+                    <View
+                        android:id="@+id/view_2"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/tv_hint3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title389"
+                        android:textColor="#FF8A91AE"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_24num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_hint3"
+                        android:text="--"
+                        android:textColor="#FFDDE0EE"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hint4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/view_2"
+                        android:text="@string/title390"
+                        android:textColor="#FF8A91AE"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_24min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_hint4"
+                        android:text="--"
+                        android:textColor="#FFDDE0EE"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FF131928"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="#FF4A90E2"
+                app:tabIndicatorHeight="2dp"
+                app:tabSelectedTextColor="#FF4A90E2"
+                app:tabTextColor="#FFA3A5BE" />
+
+
+            <com.at.arouter.common.widget.NoTouchScrollViewpager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="408dp"
+                android:background="#FF1E2437"
+                android:paddingBottom="@dimen/size_3dp"
+                android:paddingTop="@dimen/size_2dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <!--<com.atkj.mainprocesslib.view.refreshview.FixedHeightRecyclerView-->
+                    <!--android:id="@+id/recy"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="?attr/background_color" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.at.arouter.common.widget.ScrollViewExtend>
+
+
+
+</LinearLayout>

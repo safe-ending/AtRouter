@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.at.arouter.third" >
+
+    <!--组件单独运行时需要添加组件所需要的权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:name="debug.ThirdsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_arrow_back"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.aty.work_order.CreateWorkOrderActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".ui.aty.work_order.WorkOrderActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.aty.work_order.WorkOrderDetailActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".ui.aty.notice.NoticeActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+</manifest>

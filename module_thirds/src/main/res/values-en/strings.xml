@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">third module</string>
+    <string name="a965">Open</string>
+    <string name="a980">A&amp;T Alerts</string>
+    <string name="a981">Take up</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="a657"> A&amp;T wallet</string>
+    <string name="untreated">Untreated</string>
+    <string name="haveHand">Have in hand</string>
+    <string name="completed">Completed</string>
+    <string name="a916">Raise a question</string>
+    <string name="a917">Questions</string>
+    <string name="a918">Please input problem description</string>
+    <string name="a928">Resolved</string>
+    <string name="a929">Unsolved</string>
+    <string name="a930">Problem description</string>
+    <string name="a931">System response %1$s</string>
+    <string name="a932">Problem description %1$s</string>
+    <string name="a743">Publish</string>
+    <string name="a60">Please leave your valuable advice here!</string>
+    <string name="a61">Contact：</string>
+    <string name="a62">（Optional,phone or email）</string>
+    <string name="a63">Submit</string>
+    <string name="letter">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.@</string>
+    <string name="a809">Ask questions</string>
+    <string name="comment_content">Please enter a comment!</string>
+    <string name="photo1">Take a picture</string>
+    <string name="photo2">Choose from album</string>
+    <string name="photo3">Cancel</string>
+    <string name="a742">Comment...</string>
+    <string name="new_details">News details</string>
+    <string name="wait_build">Not yet open, please look forward to it!</string>
+    <string name="a628">An unknown error</string>
+    <string name="question_content">Please enter a description of the problem!</string>
+    <string name="commit_address">Please enter the correct email address</string>
+    <string name="commit_phone">Please enter the correct mobile number </string>
+    <string name="order_details">Details of questions</string>
+    <string name="a632">Data Empty</string>
+    <string name="a658">Hot</string>
+    <string name="a959">Points</string>
+    <string name="a960">Alerts</string>
+
+    <string name="mine_notice">System notice</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF"
+    android:paddingLeft="@dimen/size_20dp"
+    android:paddingRight="@dimen/size_20dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/tv_tm"
+            android:text=""
+            android:textColor="@color/TitleColor"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <TextView
+            android:id="@+id/tv_tm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="time"
+            android:textColor="@color/color_ACB0C3"
+            android:textSize="@dimen/text_size_12sp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:lineSpacingExtra="@dimen/size_25dp"
+        android:text=""
+        android:textColor="#495060"
+        android:textSize="@dimen/text_size_12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_fe6e6e6" />
+</RelativeLayout>

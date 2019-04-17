@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_head_portrait"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@mipmap/commend_head" />
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/comment_reply" />
+
+        <LinearLayout
+            android:id="@+id/ll_my_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/iv_comment"
+            android:layout_toRightOf="@+id/iv_head_portrait"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#97a9b5"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#97a9b5"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#2A4159"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_reply_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_my_info"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_head_portrait"
+            android:background="#f5f5f7"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_look_all_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rv_reply_comment"
+            android:layout_below="@+id/rv_reply_comment"
+            android:background="@drawable/selecter_reply_comment"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#6087CF"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</layout>

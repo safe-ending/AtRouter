@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.at.arouter.user.RegistInfoActivity.ClickHandler" />
+
+        <variable
+            name="dataHandler"
+            type="com.at.arouter.user.RegistInfoActivity.DataHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_19dp"
+            android:background="@drawable/click_bg_white_gray"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:onClick="@{clickHandler.onClickFinish}"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingLeft="@dimen/size_20dp"
+            android:paddingRight="@dimen/size_20dp"
+            android:paddingTop="@dimen/size_10dp"
+            android:singleLine="true"
+            android:text="@string/regist_page"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_size_30sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.at.arouter.common.widget.CustomEditText2
+                        android:id="@+id/etUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_60dp"
+                        android:paddingLeft="@dimen/size_20dp"
+                        android:paddingRight="@dimen/size_10dp"
+                        app:display_right_btn2="false"
+                        app:display_right_icon2="false"
+                        app:hint_text="@string/regist_name"
+                        app:maxLength2="25"
+                        app:text_color="@color/color_000000"
+                        app:text_content=""
+                        app:text_hint_color="@color/color_999999"
+                        app:text_size2="@dimen/text_size_15sp" />
+                    <!--app:display_right_icon="true"//俩项搭配使用-->
+                    <!--app:text_inputtype="textPassword"//在自定义控件中写死-->
+
+                    <com.at.arouter.common.widget.CustomEditText2
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_60dp"
+                        android:layout_below="@+id/etUserName"
+                        android:paddingLeft="@dimen/size_20dp"
+                        android:paddingRight="@dimen/size_10dp"
+                        app:display_right_btn2="false"
+                        app:display_right_icon2="false"
+                        android:digits="@string/letter1"
+                        app:hint_text="@string/regist_phone"
+                        app:maxLength2="11"
+                        app:text_color="@color/color_000000"
+                        app:text_content=""
+                        app:text_hint_color="@color/color_999999"
+                        app:text_size2="@dimen/text_size_15sp" />
+                    <!--app:display_right_icon="true"//俩项搭配使用-->
+                    <!--app:text_inputtype="textPassword"//在自定义控件中写死-->
+
+                    <com.at.arouter.common.widget.CustomEditText2
+                        android:id="@+id/etCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_60dp"
+                        android:layout_below="@+id/etPhone"
+                        android:paddingLeft="@dimen/size_20dp"
+                        app:display_right_btn2="true"
+                        app:display_right_icon2="false"
+                        app:hint_text="@string/regist_code"
+                        app:maxLength2="6"
+                        app:text_color="@color/color_000000"
+                        app:text_content=""
+                        app:text_hint_color="@color/color_999999"
+                        app:text_size2="@dimen/text_size_15sp" />
+                    <!--app:display_right_icon="true"//俩项搭配使用-->
+                    <!--app:text_inputtype="textPassword"//在自定义控件中写死-->
+
+
+                    <com.at.arouter.common.widget.CustomEditText2
+                        android:id="@+id/etInvite"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_60dp"
+                        android:layout_below="@+id/etCode"
+                        android:paddingLeft="@dimen/size_20dp"
+                        android:paddingRight="@dimen/size_60dp"
+                        app:display_right_btn2="false"
+                        app:display_right_icon2="false"
+                        app:hint_text="@string/regist_invite"
+                        app:maxLength2="10"
+                        app:text_color="@color/color_000000"
+                        app:text_content=""
+                        app:text_hint_color="@color/color_999999"
+                        app:text_size2="@dimen/text_size_15sp" />
+                    <!--app:display_right_icon="true"//俩项搭配使用-->
+                    <!--app:text_inputtype="textPassword"//在自定义控件中写死-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/etCode"
+                        android:background="@drawable/click_bg_white_gray"
+                        android:gravity="center"
+                        android:onClick="@{clickHandler.onClickScan}"
+                        android:paddingLeft="@dimen/size_20dp"
+                        android:paddingRight="@dimen/size_20dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/scan" />
+                    </LinearLayout>
+
+
+                    <com.at.arouter.common.widget.CustomEditText2
+                        android:id="@+id/etPwd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_60dp"
+                        android:layout_below="@+id/etInvite"
+                        android:paddingLeft="@dimen/size_20dp"
+                        android:paddingRight="@dimen/size_10dp"
+                        app:display_right_btn2="false"
+                        app:display_right_icon2="false"
+                        app:hint_text="@string/regist_login_pwd"
+                        app:maxLength2="10"
+                        app:text_color="@color/color_000000"
+                        app:text_content=""
+                        app:text_hint_color="@color/color_999999"
+                        app:text_inputtype="textPassword"
+                        app:text_size2="@dimen/text_size_15sp" />
+                    <!--app:display_right_icon="true"//俩项搭配使用-->
+                    <!--app:text_inputtype="textPassword"//在自定义控件中写死-->
+
+
+                    <com.at.arouter.common.widget.CustomEditText2
+                        android:id="@+id/etPwd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_60dp"
+                        android:layout_below="@+id/etPwd1"
+                        android:paddingLeft="@dimen/size_20dp"
+                        android:paddingRight="@dimen/size_10dp"
+                        app:display_right_btn2="false"
+                        app:display_right_icon2="false"
+                        app:hint_text="@string/regist_login_pwd2"
+                        app:maxLength2="10"
+                        app:text_color="@color/color_000000"
+                        app:text_content=""
+                        app:text_hint_color="@color/color_999999"
+                        app:text_inputtype="textPassword"
+                        app:text_size2="@dimen/text_size_15sp" />
+                    <!--app:display_right_icon="true"//俩项搭配使用-->
+                    <!--app:text_inputtype="textPassword"//在自定义控件中写死-->
+
+                    <com.at.arouter.common.widget.CustomEditText2
+                        android:id="@+id/etExPwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_60dp"
+                        android:layout_below="@+id/etPwd2"
+                        android:paddingLeft="@dimen/size_20dp"
+                        android:paddingRight="@dimen/size_10dp"
+                        app:display_right_btn2="false"
+                        app:display_right_icon2="false"
+                        app:hint_text="@string/regist_ex_pwd"
+                        app:maxLength2="6"
+                        app:text_color="@color/color_000000"
+                        app:text_content=""
+                        app:text_hint_color="@color/color_999999"
+                        app:text_inputtype="textPassword"
+                        app:text_size2="@dimen/text_size_15sp" />
+                    <!--app:display_right_icon="true"//俩项搭配使用-->
+                    <!--app:text_inputtype="textPassword"//在自定义控件中写死-->
+
+
+                    <LinearLayout
+                        android:id="@+id/llCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etExPwd"
+                        android:layout_marginLeft="@dimen/size_10dp"
+                        android:layout_marginRight="@dimen/size_10dp"
+                        android:layout_marginTop="@dimen/size_25dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/size_10dp"
+                        android:paddingRight="@dimen/size_10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/click_bg_white_gray"
+                            android:gravity="center_vertical"
+                            android:onClick="@{clickHandler.onClickCheckbox}">
+
+                            <CheckBox
+                                android:id="@+id/cbChoice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@drawable/checkbox_regist"
+                                android:checked="false" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/size_6dp"
+                                android:gravity="center"
+                                android:text="@string/regist_agree"
+                                android:textColor="@color/color_999999"
+                                android:textSize="@dimen/text_size_13sp" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_scheudle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_3dp"
+                            android:background="@drawable/click_bg_white_gray"
+                            android:gravity="center"
+                            android:onClick="@{clickHandler.onClickShedule}"
+                            android:text="@string/regist_html"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/text_size_13sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvLogin"
+                        style="@style/text_submit"
+                        android:layout_below="@+id/llCheck"
+                        android:layout_marginBottom="@dimen/size_15dp"
+                        android:layout_marginTop="@dimen/size_20dp"
+                        android:enabled="true"
+                        android:onClick="@{clickHandler.onClickCommit}"
+                        android:text="立即注册" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLogin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size_20dp"
+                        android:layout_marginBottom="@dimen/size_15dp"
+                        android:background="@drawable/click_bg_white_gray"
+                        android:onClick="@{clickHandler.onClickToLogin}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="已有账号？"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="立即登录"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_size_14sp" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/line_style_gray"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

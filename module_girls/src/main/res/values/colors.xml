@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--girls模块 各module模块的命名可重复-->
+    <color name="color_fe6e6e6">#e6e6e6</color>
+    <color name="color_ff5f5f7">#f5f5f7</color>
+    <color name="color_f6087CF">#6087CF</color>
+    <color name="color_f8794A2">#8794A2</color>
+    <color name="color_fff5d5a">#ff5d5a</color>
+    <color name="color_f274057">#274057</color>
+    <color name="color_E3E3E3"> #E3E3E3</color><!--输入框下划线色值-->
+    <color name="fadadbd">#adadbd</color>
+    <color name="f0b0817">#0b0817</color>
+</resources>

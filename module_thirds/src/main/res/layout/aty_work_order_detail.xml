@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.at.arouter.third.ui.aty.work_order.WorkOrderDetailActivity.ClickHandler" />
+
+        <variable
+            name="dataHandler"
+            type="com.at.arouter.third.ui.aty.work_order.WorkOrderDetailActivity.DataHandler" />
+    </data>
+
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_E3E3E3">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_reply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_reply"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/rv_reply"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:id="@+id/tv_resolved"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="@string/a928"
+                            android:textColor="#8794A2"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#8794A2" />
+
+                        <TextView
+                            android:id="@+id/tv_unsolved"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="20dp"
+                            android:text="@string/a929"
+                            android:textColor="#8794A2"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </RelativeLayout>
+
+</layout>

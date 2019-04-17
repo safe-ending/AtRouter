@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.at.arouter.user.LoginActivity.ClickHandler" />
+
+        <variable
+            name="dataHandler"
+            type="com.at.arouter.user.LoginActivity.DataHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_19dp"
+            android:background="@drawable/click_bg_white_gray"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:onClick="@{clickHandler.onClickFinish}"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingLeft="@dimen/size_20dp"
+            android:paddingRight="@dimen/size_20dp"
+            android:paddingTop="@dimen/size_10dp"
+            android:singleLine="true"
+            android:text="@string/login_page"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_size_31sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_95dp">
+
+            <com.at.arouter.common.widget.CustomEditText2
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_60dp"
+                android:paddingLeft="@dimen/size_20dp"
+                android:paddingRight="@dimen/size_10dp"
+                app:display_right_btn2="false"
+                app:display_right_icon2="false"
+                app:hint_text="@string/login_account"
+                app:maxLength2="25"
+                app:text_color="@color/color_000000"
+                app:text_content=""
+                app:text_hint_color="@color/color_999999"
+                app:text_size2="@dimen/text_size_15sp" />
+            <!--app:display_right_icon="true"//俩项搭配使用-->
+            <!--app:text_inputtype="textPassword"//在自定义控件中写死-->
+
+            <com.at.arouter.common.widget.CustomEditText2
+                android:id="@+id/tvPwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_60dp"
+                android:layout_below="@+id/tvUserName"
+                android:paddingLeft="@dimen/size_20dp"
+                android:paddingRight="@dimen/size_10dp"
+                app:display_right_btn2="false"
+                app:display_right_icon2="true"
+                app:hint_text="@string/login_pwd"
+                app:maxLength2="10"
+                app:text_color="@color/color_000000"
+                app:text_content=""
+                app:text_hint_color="@color/color_999999"
+                app:text_inputtype="textPassword"
+                app:text_size2="@dimen/text_size_15sp" />
+            <!--app:display_right_icon="true"//俩项搭配使用-->
+            <!--app:text_inputtype="textPassword"//在自定义控件中写死-->
+
+
+            <RelativeLayout
+                android:id="@+id/llView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_below="@+id/tvPwd"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_marginTop="@dimen/size_50dp"
+                android:paddingRight="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/click_bg_white_gray"
+                    android:gravity="center"
+                    android:onClick="@{clickHandler.onClickForget}"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:paddingRight="@dimen/size_20dp"
+                    android:text="@string/login_forget_pwd"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/text_size_14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/click_bg_white_gray"
+                    android:onClick="@{clickHandler.onClickRegist}"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/login_no_account"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/login_regist"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/text_size_14sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvLogin"
+                style="@style/text_submit"
+                android:layout_below="@+id/llView"
+                android:layout_marginBottom="@dimen/size_15dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:enabled="true"
+                android:onClick="@{clickHandler.onClickLogin}"
+                android:text="@string/login_login" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_19dp"
+            android:background="@drawable/click_bg_white_gray"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="切换环境"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/text_size_30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--资源名为CustomTitleView-->
+    <declare-styleable name="CustomEditText2">
+        <attr name="text_hint_color" format="color" />
+        <attr name="text_color" format="color"/>
+        <attr name="hint_text" format="string"/>
+        <attr name="text_content" format="string"/>
+        <attr name="text_size2" format="dimension"/>
+        <attr name="maxLength2" format="integer"/>
+        <attr name="display_right_btn2" format="boolean"/>
+        <attr name="display_right_icon2" format="boolean"/>
+        <attr name="text_digst" format="string"/>
+        <attr name="text_singlle" format="boolean"/>
+        <attr name="text_inputtype" format="string"/>
+        <attr name="show_left_title" format="boolean"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="config"
+            type="com.at.arouter.common.listener.BaseDataHandler.UIConfig"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/icActivityHeaderView"
+            layout="@layout/view_activity_header"
+            app:config="@{config}"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/ContentBgColor"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/flContentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/rlNoDataLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{config.showNoData ? View.VISIBLE : View.GONE}">
+
+                <TextView
+                    android:id="@+id/tvNoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_data"
+                    android:textColor="@color/color_a0a0a0"
+                    android:textSize="@dimen/text_size_14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLoading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{config.showLoading ? View.VISIBLE : View.GONE}">
+
+                <ProgressBar
+                    android:id="@+id/pbLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/colorPrimary"
+                    android:layout_centerInParent="true"/>
+
+                <!--android:indeterminateDrawable="@drawable/view_progressbar"-->
+
+                <!--<TextView
+                    android:id="@+id/tvLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pbLoading"
+                    android:layout_centerInParent="true"
+                    android:text="@string/loading"
+                    android:textColor="@color/color_a0a0a0"
+                    android:textSize="@dimen/sp16"/>-->
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

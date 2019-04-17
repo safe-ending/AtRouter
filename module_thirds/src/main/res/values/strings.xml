@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">工单模块</string>
+    <string name="a965">全文</string>
+    <string name="a980">艾特快讯</string>
+    <string name="a981">收起</string>
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    <string name="a657">艾特钱包</string>
+    <string name="untreated">未处理</string>
+    <string name="haveHand">进行中</string>
+    <string name="completed">已完成</string>
+    <string name="a916">提交问题</string>
+    <string name="a917">联系我们</string>
+    <string name="a918">问题描述</string>
+    <string name="a928">已解决</string>
+    <string name="a929">未解决</string>
+    <string name="a930">问题详情</string>
+    <string name="a931">系统回复 %1$s</string>
+    <string name="a932">问题描述 %1$s</string>
+    <string name="a743">发布</string>
+    <string name="a60">请在此留下您的宝贵意见!</string>
+    <string name="a61">手机号/邮箱：</string>
+    <string name="a62">（选填，方便我们联系您）</string>
+    <string name="a63">提交</string>
+    <string name="letter">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.@</string>
+    <string name="a809">继续提问</string>
+    <string name="comment_content">请输入评论内容！</string>
+    <string name="photo1">拍照</string>
+    <string name="photo2">从相册选择</string>
+    <string name="photo3">取消</string>
+    <string name="a742">写评论...</string>
+    <string name="new_details">新闻详情</string>
+    <string name="wait_build">暂未开放,尽请期待哦!</string>
+    <string name="a628">发生未知错误</string>
+    <string name="question_content">请输入问题描述！</string>
+    <string name="commit_address">请输入正确的邮箱地址</string>
+    <string name="commit_phone">请输入正确的手机号码</string>
+    <string name="order_details">工单详情</string>
+    <string name="a632">无更多数据</string>
+    <string name="a658">热门</string>
+    <string name="a959">观点</string>
+    <string name="a960">快讯</string>
+
+    <string name="mine_notice">系统公告</string>
+</resources>

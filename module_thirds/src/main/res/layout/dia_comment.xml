@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/padding_left_right"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical">
+
+    <com.atkj.chainplusclub.ui.view.EditTextMonitor
+        android:id="@+id/etm_comment"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/frame_line_30dp"
+        android:gravity="center|left"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#2A4159"
+        android:textColorHint="#C4CED3"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_e6e6e6_6dp"
+            android:gravity="center"
+            android:text="@string/a743"
+            android:textColor="@color/TitleColor" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:src="@mipmap/new_share" />
+
+    </LinearLayout>
+
+</LinearLayout>

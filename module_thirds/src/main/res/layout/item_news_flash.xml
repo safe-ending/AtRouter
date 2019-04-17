@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_line"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/v_line"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_top_line"
+                android:layout_width="0.5dp"
+                android:layout_height="6dp"
+                android:background="#e5e5ee" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/shape_circular_34a9ff" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#e5e5ee" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#adadbd"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ll_line"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginTop="7dp"
+            android:gravity="left"
+            android:enabled="true"
+            android:maxLines="2"
+            android:textColor="#0b0817"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.at.arouter.third.ui.view.ExpandableTextView
+            android:id="@+id/etv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ll_line"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@id/id_source_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0b0817"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/id_expand_textview"
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+                android:layout_below="@+id/tv_content"
+                android:gravity="bottom"
+                android:text="@string/a965"
+                android:textColor="#34a9ff"
+                android:textSize="13sp" />
+
+        </com.at.arouter.third.ui.view.ExpandableTextView>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:layout_alignLeft="@+id/tv_time"
+            android:layout_below="@+id/etv_content"
+            android:layout_marginTop="9dp">
+
+            <LinearLayout
+                android:id="@+id/ll_share"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/news_flash_share" />
+
+                <TextView
+                    android:id="@+id/tv_share_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#adadbd"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_comment"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_comment"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/news_flash_comment" />
+
+                <TextView
+                    android:id="@+id/tv_comment_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#adadbd"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fabulous"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:id="@+id/iv_fabulous"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/news_flash_zan_un" />
+
+                <TextView
+                    android:id="@+id/tv_fabulous_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#adadbd"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignLeft="@+id/tv_time"
+            android:layout_below="@+id/rl_btn"
+            android:layout_marginTop="30dp" />
+
+    </RelativeLayout>
+
+</layout>

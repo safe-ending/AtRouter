@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">lib_common</string>
+
+    <string name="current_internet_invalid">当前网络未连接</string>
+    <string name="internet_base_url_null">baseUrl不能为空</string>
+
+    <!--loading-->
+    <string name="loading">正在加载···</string>
+
+    <!--EasyRecyclerView库的公用布局-->
+    <string name="more_loading">加载中…</string>
+    <string name="no_more">没有更多了</string>
+    <string name="load_error_resume">加载出错，点击重试</string>
+    <string name="more">更多</string>
+    <string name="no_data">暂无数据</string>
+
+    <string name="click_count_hint1">There are too many password inputs. Please try again in&#160;</string>
+    <string name="click_count_hint2">&#160;minutes.</string>
+    <string name="address_length_err5">Incorrect address format</string>
+    <string name="copy">已帮您复制到剪贴板</string>
+    <string name="copy_null">复制的内容不能为空</string>
+    <string name="login_401">登录失效，请重新登录</string>
+    <string name="install_t4">Please allow installation of applications from unknown sources</string>
+
+
+    <string name="title403">Release and load more immediately</string>
+    <string name="title404">Release and refresh immediately</string>
+    <string name="title405">Loading more data...</string>
+    <string name="title406">Refreshing data...</string>
+    <string name="title407">Load more finish</string>
+    <string name="title408">Load more fail</string>
+    <string name="title409">No more data</string>
+    <string name="title410">Drop-down can be refreshed</string>
+    <string name="title411">Refresh finish</string>
+    <string name="title412">Refresh fail</string>
+    <string name="title413">M-d HH:mm</string>
+
+    <string name="empty_text">Data Empty</string>
+    <string name="err_msg">发生未知错误</string>
+    <string name="err_connnect">请求失败</string>
+
+    <string name="help">Help</string>
+    <string name="permission1">The current application lacks the necessary permissions.\n \n Please click "Settings "-" Permissions "- to open the required permissions</string>
+    <string name="permission2">The current application lacks </string>
+    <string name="permission3"> permissions.\n \n Please click "Settings "-" Permissions "- to open the required permissions</string>
+    <string name="refuse_permission">Users refuse to use this permission!</string>
+    <string name="not_set_permission">User not granted permission</string>
+    <string name="err_path">Picture path error</string>
+    <string name="choose_already">Choose already</string>
+    <string name="no">Cancel</string>
+    <string name="update_t2">Go to set</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about_fragment">FragmentAbout</string>
+
+    <!--语言提示工具类-->
+    <string name="checknull1">Please enter %1$s</string>
+    <string name="checknull2">Please enter %1$s(%2$s-%3$s)</string>
+    <string name="checkformat1">The %1$s you entered does not match the rule</string>
+    <string name="checkformat2">The %1$s you entered does not match the rule（%2$s-%3$s）</string>
+    <string name="checksuccess">%1$s success</string>
+    <string name="checkfailure">%1$s fail</string>
+    <string name="statelogin">login</string>
+    <string name="state_exchange">trade</string>
+    <string name="gist1">6-10 characters.Digital alphabet combination</string>
+    <string name="gist2">6 Digital password</string>
+    <string name="checkstate1">Please enter %1$s passWord</string>
+    <string name="checkstate2">Please again enter new %1$s passWord</string>
+    <string name="checkstate3">Please input  %2$s</string>
+    <string name="checkstate4">The password input is different twice, please re-enter</string>
+    <string name="checkwait">Not yet developed, please look forward to it!</string>
+    <string name="token_out">Login is invalid, please login again</string>
+    <string name="large_image">The picture is too large, please compress it and try again</string>
+    <string name="net_err">No network connection</string>
+    <!--语言提示工具类-->
+
+    <string name="get_code">获取验证码</string>
+
+    <!--规则-->
+    <string name="letter1">0123456789</string>
+    <string name="letter2">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="letter4">0123456789.</string>
+</resources>

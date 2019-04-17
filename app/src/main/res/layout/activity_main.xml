@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.at.arouter.arouterproject.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:padding="@dimen/size_15dp"
+                android:text="去登录"
+                android:textSize="@dimen/text_size_20sp" />
+
+            <Button
+                android:id="@+id/btLoginOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:padding="@dimen/size_15dp"
+                android:text="退出登录"
+                android:textSize="@dimen/text_size_20sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="@dimen/size_15dp"
+            android:text="图片组件"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <Button
+            android:id="@+id/btWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="@dimen/size_15dp"
+            android:text="工单组件"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <Button
+            android:id="@+id/btLan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="@dimen/size_15dp"
+            android:text="语言切换测试"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_5dp"
+            android:background="@color/color_F7F7F7FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="提示语模块" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/toast1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="@dimen/size_5dp"
+                    android:text="null1" />
+
+                <Button
+                    android:id="@+id/toast2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="@dimen/size_5dp"
+                    android:text="null2" />
+
+                <Button
+                    android:id="@+id/toast3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="@dimen/size_5dp"
+                    android:text="format1" />
+
+                <Button
+                    android:id="@+id/toast4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="@dimen/size_5dp"
+                    android:text="format2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/toast5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="@dimen/size_5dp"
+                    android:text="success" />
+
+                <Button
+                    android:id="@+id/toast6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="@dimen/size_5dp"
+                    android:text="failure" />
+
+                <Button
+                    android:id="@+id/toast7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="@dimen/size_5dp"
+                    android:text="checkPwd" />
+
+                <Button
+                    android:id="@+id/toast8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="@dimen/size_5dp"
+                    android:text="waitbuild" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvChange"
+                android:layout_width="@dimen/size_180dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:onClick="onClick"
+                android:background="@drawable/sl_btn_corner2_uncomplete"
+                android:textSize="@dimen/text_size_15sp"
+                android:layout_height="@dimen/size_40dp"
+                android:text="切换环境"/>
+
+            <TextView
+                android:id="@+id/tvUpdate"
+                android:layout_width="@dimen/size_180dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:onClick="onClick"
+                android:background="@drawable/sl_btn_corner2_uncomplete"
+                android:textSize="@dimen/text_size_15sp"
+                android:layout_height="@dimen/size_40dp"
+                android:text="检查更新"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
