@@ -11,7 +11,7 @@ import com.at.arouter.common.data.APIHostManager;
 import com.at.arouter.common.util.EcologyUtils;
 import com.at.arouter.common.util.FileUtils;
 import com.at.arouter.coremodel.APIManager;
-import com.at.arouter.coremodel.callback.ObserverCallback;
+import com.at.arouter.coremodel.http.callback.ObserverCallback;
 import com.at.arouter.coremodel.http.model.RequestResult;
 import com.at.arouter.coremodel.service.OtherService;
 import com.at.arouter.coremodel.viewmodel.CommonViewModel;

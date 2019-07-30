@@ -17,7 +17,7 @@ import com.at.arouter.common.listener.BaseDataHandler;
 import com.at.arouter.common.data.Constants;
 import com.at.arouter.common.util.MultiLanguageUtil;
 import com.at.arouter.coremodel.viewmodel.entities.girls.GirlsData;
-import com.at.arouter.coremodel.util.TAGUtils;
+import com.at.arouter.coremodel.http.util.TAGUtils;
 import com.at.arouter.coremodel.viewmodel.girls.GirlsViewModel;
 import com.at.arouter.module_girls.databinding.ActivityGirlsBinding;
 

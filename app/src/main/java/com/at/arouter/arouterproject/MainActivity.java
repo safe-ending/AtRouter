@@ -16,7 +16,7 @@ import com.at.arouter.common.data.AppPref;
 import com.at.arouter.common.util.ATToastUtils;
 import com.at.arouter.common.util.MultiLanguageUtil;
 import com.at.arouter.common.util.ToastUtil;
-import com.at.arouter.coremodel.callback.ObserverCallback;
+import com.at.arouter.coremodel.http.callback.ObserverCallback;
 import com.at.arouter.coremodel.APIManager;
 import com.at.arouter.coremodel.http.model.RequestResult;
 import com.at.arouter.coremodel.UserDao;
@@ -75,14 +75,11 @@ public class MainActivity extends BaseCompatActivity {
 
 
             case R.id.btWork:
-                if (UserDao.getInstance(mActivity).isLogin()) {
-                    ARouter.getInstance().build(ARouterPath.NoticeListAty).navigation(MainActivity.this);
-                } else {
-                    Utils.toLogin(MainActivity.this);
-                }
+                ARouter.getInstance().build(ARouterPath.KchartAty).navigation(MainActivity.this);
+
                 break;
             case R.id.btImage:
-                ARouter.getInstance().build(ARouterPath.KchartAty).navigation(MainActivity.this);
+                ARouter.getInstance().build(ARouterPath.GirlsListAty).navigation(MainActivity.this);
                 break;
 
             case R.id.btLan:

@@ -1,5 +1,6 @@
 package com.at.arouter.common.util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -109,10 +110,8 @@ public class MultiLanguageUtil {
             config.locale = locale;
         }
         resources.updateConfiguration(config, dm);
-//        if (context instanceof SettingActivity) {
-//            SettingActivity settingActivity = (SettingActivity) context;
-//            settingActivity.recreate();
-//        }
+        ((Activity)context).recreate();
+
         //同步更新 - app语言环境配置记录更新
         appPref.setLanguage(languageType);
         EventBus.getDefault().post(Constants.EVENT_REFRESH_LANGUAGE);

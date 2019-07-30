@@ -12,9 +12,9 @@ import com.at.arouter.common.data.APIHostManager;
 import com.at.arouter.coremodel.APIManager;
 import com.at.arouter.coremodel.viewmodel.entities.girls.GirlsData;
 import com.at.arouter.coremodel.service.GirlsService;
-import com.at.arouter.coremodel.util.NetUtils;
-import com.at.arouter.coremodel.util.SwitchSchedulers;
-import com.at.arouter.coremodel.util.TAGUtils;
+import com.at.arouter.coremodel.http.util.NetUtils;
+import com.at.arouter.coremodel.http.util.SwitchSchedulers;
+import com.at.arouter.coremodel.http.util.TAGUtils;
 import com.at.arouter.coremodel.viewmodel.base.BaseViewModel;
 
 import io.reactivex.Observable;

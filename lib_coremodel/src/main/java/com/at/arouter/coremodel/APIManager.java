@@ -5,7 +5,7 @@ import android.util.Log;
 
 import com.at.arouter.common.data.APIHostManager;
 import com.at.arouter.coremodel.service.DynamicApiService;
-import com.at.arouter.coremodel.util.HttpsUtils;
+import com.at.arouter.coremodel.http.util.HttpsUtils;
 import com.at.arouter.coremodel.http.interceptor.OfflineCacheControlInterceptor;
 
 import java.util.concurrent.TimeUnit;

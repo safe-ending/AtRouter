@@ -17,7 +17,7 @@ import com.at.arouter.common.data.ARouterPath;
 import com.at.arouter.common.base.BaseActivity;
 import com.at.arouter.common.listener.BaseDataHandler;
 import com.at.arouter.coremodel.viewmodel.entities.girls.GirlsData;
-import com.at.arouter.coremodel.util.TAGUtils;
+import com.at.arouter.coremodel.http.util.TAGUtils;
 import com.at.arouter.coremodel.viewmodel.base.BaseViewFullModel;
 import com.at.arouter.coremodel.viewmodel.girls.DynamicGirlsViewModel;
 import com.at.arouter.module_girls.databinding.ActivityGirlsBinding;

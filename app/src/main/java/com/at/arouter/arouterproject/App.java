@@ -8,11 +8,11 @@ import com.at.arouter.common.data.APIHostManager;
 import com.at.arouter.common.data.AppPref;
 import com.at.arouter.common.util.Utils;
 import com.at.arouter.common.util.crash.CrashHandlerException;
-import com.at.arouter.coremodel.callback.EmptyCallback;
-import com.at.arouter.coremodel.callback.ErrorCallback;
-import com.at.arouter.coremodel.callback.HttpCallback;
-import com.at.arouter.coremodel.callback.LoadingCallback;
-import com.at.arouter.coremodel.callback.TokenCallback;
+import com.at.arouter.coremodel.http.callback.EmptyCallback;
+import com.at.arouter.coremodel.http.callback.ErrorCallback;
+import com.at.arouter.coremodel.http.callback.HttpCallback;
+import com.at.arouter.coremodel.http.callback.LoadingCallback;
+import com.at.arouter.coremodel.http.callback.TokenCallback;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.kingja.loadsir.core.LoadSir;
 

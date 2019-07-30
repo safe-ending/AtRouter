@@ -20,7 +20,7 @@ import com.at.arouter.common.data.Constants;
 import com.at.arouter.common.listener.BaseClickHandler;
 import com.at.arouter.common.listener.BaseDataHandler;
 import com.at.arouter.common.util.ToastUtil;
-import com.at.arouter.coremodel.callback.ObserverCallback;
+import com.at.arouter.coremodel.http.callback.ObserverCallback;
 import com.at.arouter.coremodel.APIManager;
 import com.at.arouter.coremodel.viewmodel.entities.user.UserModel;
 import com.at.arouter.coremodel.http.model.RequestResult;

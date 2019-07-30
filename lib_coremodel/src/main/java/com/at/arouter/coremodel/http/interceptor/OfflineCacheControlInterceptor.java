@@ -4,7 +4,7 @@ package com.at.arouter.coremodel.http.interceptor;
 import android.util.Log;
 
 import com.at.arouter.coremodel.UserDao;
-import com.at.arouter.coremodel.util.NetUtils;
+import com.at.arouter.coremodel.http.util.NetUtils;
 
 import java.io.IOException;
 

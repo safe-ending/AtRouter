@@ -13,7 +13,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.at.arouter.common.data.ARouterPath;
 import com.at.arouter.common.base.BaseFragment;
 import com.at.arouter.coremodel.viewmodel.entities.girls.GirlsData;
-import com.at.arouter.coremodel.util.TAGUtils;
+import com.at.arouter.coremodel.http.util.TAGUtils;
 import com.at.arouter.coremodel.viewmodel.girls.GirlsViewModel;
 import com.at.arouter.module_girls.databinding.FragmentGirlsBinding;
 

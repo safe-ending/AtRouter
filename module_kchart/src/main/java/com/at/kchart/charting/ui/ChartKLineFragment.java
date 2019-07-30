@@ -9,11 +9,11 @@ import android.view.View;
 
 import com.at.arouter.common.data.Constants;
 import com.at.arouter.common.util.LogUtils;
-import com.at.arouter.coremodel.callback.ObserverCallback;
+import com.at.arouter.coremodel.http.callback.ObserverCallback;
 import com.at.arouter.coremodel.APIManager;
 import com.at.arouter.coremodel.http.model.RequestResult;
 import com.at.arouter.coremodel.service.KchartService;
-import com.at.arouter.coremodel.util.TAGUtils;
+import com.at.arouter.coremodel.http.util.TAGUtils;
 import com.at.arouter.coremodel.viewmodel.CommonViewModel;
 import com.at.arouter.coremodel.viewmodel.entities.kchart.KLineDataModel;
 import com.at.arouter.kchart.R;

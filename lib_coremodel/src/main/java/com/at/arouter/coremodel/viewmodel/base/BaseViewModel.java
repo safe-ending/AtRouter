@@ -8,9 +8,8 @@ import android.databinding.ObservableField;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.apkfuns.logutils.LogUtils;
 import com.at.arouter.coremodel.http.model.RequestResult;
-import com.at.arouter.coremodel.util.TAGUtils;
+import com.at.arouter.coremodel.http.util.TAGUtils;
 
 import java.lang.reflect.ParameterizedType;
 import io.reactivex.disposables.CompositeDisposable;

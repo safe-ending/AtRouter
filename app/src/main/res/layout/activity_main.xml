@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:padding="@dimen/size_15dp"
-            android:text="工单组件"
+            android:text="K线组件"
             android:textSize="@dimen/text_size_20sp" />
 
         <Button

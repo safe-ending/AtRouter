@@ -11,18 +11,18 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.at.arouter.coremodel.callback.BaseObserverResult;
-import com.at.arouter.coremodel.callback.EmptyCallback;
-import com.at.arouter.coremodel.callback.ErrorCallback;
-import com.at.arouter.coremodel.callback.HttpCallback;
-import com.at.arouter.coremodel.callback.ObserverCallback;
-import com.at.arouter.coremodel.callback.TokenCallback;
+import com.at.arouter.coremodel.http.callback.BaseObserverResult;
+import com.at.arouter.coremodel.http.callback.EmptyCallback;
+import com.at.arouter.coremodel.http.callback.ErrorCallback;
+import com.at.arouter.coremodel.http.callback.HttpCallback;
+import com.at.arouter.coremodel.http.callback.ObserverCallback;
+import com.at.arouter.coremodel.http.callback.TokenCallback;
 import com.at.arouter.coremodel.http.err.ExceptionUtils;
 import com.at.arouter.coremodel.http.err.RxHelper;
 import com.at.arouter.coremodel.http.err.RxjavaFactory;
 import com.at.arouter.coremodel.http.model.RequestResult;
-import com.at.arouter.coremodel.util.NetUtils;
-import com.at.arouter.coremodel.util.TAGUtils;
+import com.at.arouter.coremodel.http.util.NetUtils;
+import com.at.arouter.coremodel.http.util.TAGUtils;
 import com.at.arouter.coremodel.viewmodel.base.BaseViewModel;
 import com.kingja.loadsir.core.LoadService;
 

@@ -9,9 +9,9 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.at.arouter.coremodel.APIManager;
-import com.at.arouter.coremodel.util.JsonUtil;
-import com.at.arouter.coremodel.util.SwitchSchedulers;
-import com.at.arouter.coremodel.util.TAGUtils;
+import com.at.arouter.coremodel.http.util.JsonUtil;
+import com.at.arouter.coremodel.http.util.SwitchSchedulers;
+import com.at.arouter.coremodel.http.util.TAGUtils;
 
 import java.lang.reflect.ParameterizedType;
 

@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.at.arouter.coremodel.viewmodel.entities.user.UserModel;
-import com.at.arouter.coremodel.util.JsonUtil;
+import com.at.arouter.coremodel.http.util.JsonUtil;
 
 import org.apache.commons.io.FileUtils;
 

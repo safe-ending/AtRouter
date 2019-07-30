@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://E:\yangtao\workspace\ATRouter\Android-ATRouter\ArouterProject.iml" filepath="E:\yangtao\workspace\ATRouter\Android-ATRouter\ArouterProject.iml" />
+      <module fileurl="file://E:/yangtao/workspace/ATRouter/Android-ATRouter/ArouterProject.iml" filepath="E:/yangtao/workspace/ATRouter/Android-ATRouter/ArouterProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AtRouter.iml" filepath="$PROJECT_DIR$/AtRouter.iml" />
       <module fileurl="file://$PROJECT_DIR$/AtRouter.iml" filepath="$PROJECT_DIR$/AtRouter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\yangtao\workspace\Ecology\ArouterProject\lib_common\common.iml" filepath="E:\yangtao\workspace\Ecology\ArouterProject\lib_common\common.iml" />
+      <module fileurl="file://E:/yangtao/workspace/Ecology/ArouterProject/lib_common/common.iml" filepath="E:/yangtao/workspace/Ecology/ArouterProject/lib_common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_common/lib_common.iml" filepath="$PROJECT_DIR$/lib_common/lib_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_coremodel/lib_coremodel.iml" filepath="$PROJECT_DIR$/lib_coremodel/lib_coremodel.iml" />
-      <module fileurl="file://E:\yangtao\workspace\Ecology\ArouterProject\lib_opensource\lib_opensouce.iml" filepath="E:\yangtao\workspace\Ecology\ArouterProject\lib_opensource\lib_opensouce.iml" />
+      <module fileurl="file://E:/yangtao/workspace/Ecology/ArouterProject/lib_opensource/lib_opensouce.iml" filepath="E:/yangtao/workspace/Ecology/ArouterProject/lib_opensource/lib_opensouce.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_opensource/lib_opensource.iml" filepath="$PROJECT_DIR$/lib_opensource/lib_opensource.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_girls/module_girls.iml" filepath="$PROJECT_DIR$/module_girls/module_girls.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_kchart/module_kchart.iml" filepath="$PROJECT_DIR$/module_kchart/module_kchart.iml" />
