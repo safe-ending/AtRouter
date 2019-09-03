@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.at.arouter.common.base.BaseActivity;
 import com.at.arouter.common.data.APIHostManager;
 import com.at.arouter.common.data.ARouterPath;
@@ -81,9 +82,9 @@ public class LoginActivity extends BaseActivity {
             }
 
         }
-//        //inject需要注入后才可以读取到携带过来的参数
-//        ARouter.getInstance().inject(this);
-//        mBinding.tvUserName.setText(name);
+        //inject需要注入后才可以读取到携带过来的参数
+        ARouter.getInstance().inject(this);
+        mBinding.tvUserName.setText(name);
         if ((getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0) {
             mBinding.tvChange.setVisibility(View.VISIBLE);
             mBinding.tvChange.setOnClickListener(new View.OnClickListener() {
